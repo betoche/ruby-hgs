@@ -31,6 +31,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # Draper adds an object-oriented layer of presentation logic to your Rails apps
 gem 'draper', '~> 3.1'
 
+# Reports Kit a javascript reporting tool
+gem 'reports_kit'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

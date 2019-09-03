@@ -16,6 +16,6 @@ module RubyHgs
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    config.secret_key_base = 'blipblapblup'
+    config.action_controller.forgery_protection_origin_check = false
   end
 end

@@ -1,13 +1,19 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  user_name: MyString
+  email: MyString
+  password: MyString
   first_name: MyString
   middle_name: MyString
   last_name: MyString
-  document_id: MyString
+  gender: MyString
 
 two:
+  user_name: MyString
+  email: MyString
+  password: MyString
   first_name: MyString
   middle_name: MyString
   last_name: MyString
-  document_id: MyString
+  gender: MyString

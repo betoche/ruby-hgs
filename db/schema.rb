@@ -10,18 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_03_214421) do
-
-  create_table "billings", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "product_id", null: false
-    t.integer "service_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["product_id"], name: "index_billings_on_product_id"
-    t.index ["service_id"], name: "index_billings_on_service_id"
-    t.index ["user_id"], name: "index_billings_on_user_id"
-  end
+ActiveRecord::Schema.define(version: 2019_09_03_230647) do
 
   create_table "products", force: :cascade do |t|
     t.string "name"
@@ -38,15 +27,15 @@ ActiveRecord::Schema.define(version: 2019_09_03_214421) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "user_name"
+    t.string "email"
+    t.string "password"
     t.string "first_name"
     t.string "middle_name"
     t.string "last_name"
-    t.string "document_id"
+    t.string "gender"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  #add_foreign_key "billings", "products"
-  #add_foreign_key "billings", "services"
-  #add_foreign_key "billings", "users"
 end
