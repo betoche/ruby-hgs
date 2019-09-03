@@ -1,0 +1,14 @@
+---
+tables:
+  billings:
+    position_top: '98'
+    position_left: '507'
+  products:
+    position_top: '43'
+    position_left: '253.609375'
+  services:
+    position_top: '355'
+    position_left: '478.21875'
+  users:
+    position_top: '149'
+    position_left: '748.828125'

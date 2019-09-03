@@ -1,0 +1,25 @@
+---
+tables:
+  action_text_rich_texts:
+    has_many:
+    - active_storage_attachments
+    belongs_to: []
+  action_mailbox_inbound_emails:
+    has_one:
+    - active_storage_attachments
+  active_storage_blobs:
+    has_one:
+    - active_storage_attachments
+    has_many:
+    - active_storage_attachments
+  active_storage_attachments:
+    belongs_to:
+    - active_storage_blobs
+  billings:
+    belongs_to:
+    - users
+    - products
+    - services
+  users:
+    has_many:
+    - billings
